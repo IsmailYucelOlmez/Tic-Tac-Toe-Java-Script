@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Righteous&family=Secular+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 22px;
+    font-family: 'Climate Crisis', cursive;
+    font-family: 'Righteous', cursive;
+    font-family: 'Secular One', sans-serif;
+}
+body{
+    height: 100vh;
+}
+.container{
+    width: 100%;
+    height: 100%;
+}
+.header{
+    width: 100%;
+    height: 8%;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+.header-player{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    padding: 10px;
+    
+}
+#player-one-header{
+   background-color: #3A98B9;
+   
+}
+#player-two-header{
+    background-color: #FF2E63;
+}
+.show-result{
+    color: #fff;
+    background-color: #252A34;
+    text-align: center;
+}
+.game-field{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 100%;
+    height: 92%;
+    background: linear-gradient(90deg, #00a884 0%, #252A34 3%);
+    
+
+}
+.game-field-inner{
+    width: 40%;
+    height: 60%;
+    border-radius: 10px;
+    background-color: #4E6E81;
+}
+.row-1,.row-2,.row-3{
+    width: 100%;
+    height: 33%;
+    display: flex;
+}
+.zone-button{
+    height: 100%;
+    width: 60%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#zone-1-button,#zone-2-button,#zone-4-button,#zone-5-button{
+    border-bottom: 3px solid #fff;
+    border-right: 3px solid #fff;
+}
+#zone-7-button,#zone-8-button{
+    border-right: 3px solid #fff;
+}
+#zone-3-button,#zone-6-button{
+    border-bottom: 3px solid #fff;
+}
+.zone-button{
+    width: 100%;
+    height: 100%;
+    
+    background-color: #4E6E81;
+    color: #fff;
+    font-size: 60px;
+    border: 0;
+}
+#zone-1-button{
+    border-top-left-radius: 10px;
+}
+#zone-3-button{
+    border-top-right-radius: 10px;
+}
+#zone-7-button{
+    border-bottom-left-radius: 10px;
+}
+#zone-9-button{
+    border-bottom-right-radius: 10px;
+}
+.restart{
+    background-color: #364F6B;
+    text-align: center;
+    color: #fff;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    align-items: center;
+}
+.hide{
+    display: none;
+}

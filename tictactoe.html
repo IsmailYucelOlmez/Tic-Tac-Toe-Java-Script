@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe App</title>
+    <link rel="stylesheet" href="tictactoe.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+
+        <div class="header">
+           <div class="header-player" id="player-one-header">
+
+            <div class="player-info"> <p class="player-text">Kullanıcı 1</p> </div>
+            <div class="score-field"> <p class="score-text-1">0</p> </div>
+
+           </div>
+           <div class="header-player" id="player-two-header">
+             
+                <div class="score-field"> <p class="score-text-2">0</p> </div>
+                <div class="player-info"> <p class="player-text">Kullanıcı 2</p> </div>             
+             
+           </div>
+
+        </div>
+        <div class="show-result hide">Kullanıcı Kazandı</div>
+        <div class="game-field">
+            
+            <div class="game-field-inner">
+
+                <div class="row-1">
+                    <button class="zone-button"  id="zone-1-button" onclick="changePlayer(this)"></button> 
+                    <button class="zone-button"  id="zone-2-button" onclick="changePlayer(this)"></button>
+                    <button class="zone-button"  id="zone-3-button" onclick="changePlayer(this)"></button>
+                </div>
+                <div class="row-2">
+                    <button class="zone-button"  id="zone-4-button" onclick="changePlayer(this)"></button>
+                    <button class="zone-button"  id="zone-5-button" onclick="changePlayer(this)"></button>
+                    <button class="zone-button"  id="zone-6-button" onclick="changePlayer(this)"></button>
+                </div>
+                <div class="row-3">
+                    <button class="zone-button"  id="zone-7-button" onclick="changePlayer(this)"></button>
+                    <button class="zone-button"  id="zone-8-button" onclick="changePlayer(this)"></button>
+                    <button class="zone-button"  id="zone-9-button" onclick="changePlayer(this)"></button>
+                </div>
+                <div class="restart" onclick="restart()"><i class="fa-solid fa-rotate-left"></i> Restart</div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="tictactoe.js"></script>
+</body>
+</html>
